@@ -14,9 +14,6 @@ devDependencies:
   vitepress-markdown-timeline:
     specifier: ^1.2.1
     version: 1.2.1
-  vitepress-theme-website:
-    specifier: ^1.0.6
-    version: 1.0.6(typescript@5.4.3)
 
 packages:
 
@@ -907,19 +904,6 @@ packages:
       - vue
     dev: true
 
-  /@waline/client@2.15.8(typescript@5.4.3):
-    resolution: {integrity: sha512-EBL7RXJUJs742miTvOU0Vt8NEmeJ63EN5TtSsYZfzjUdvEtlv+JsBbS5uiz3C9v5qV7Hz+XDZdc8nc13mG9vNQ==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@vueuse/core': 10.9.0(vue@3.4.21)
-      autosize: 6.0.1
-      marked: 4.3.0
-      vue: 3.4.21(typescript@5.4.3)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - typescript
-    dev: true
-
   /acorn-jsx@5.3.2(acorn@8.11.3):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -981,10 +965,6 @@ packages:
   /array-union@2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
-    dev: true
-
-  /autosize@6.0.1:
-    resolution: {integrity: sha512-f86EjiUKE6Xvczc4ioP1JBlWG7FKrE13qe/DxBCpe8GCipCq2nFw73aO8QEBKHfSbYGDN5eB9jXWKen7tspDqQ==}
     dev: true
 
   /balanced-match@1.0.2:
@@ -1474,12 +1454,6 @@ packages:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
     dev: true
 
-  /marked@4.3.0:
-    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    dev: true
-
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -1847,16 +1821,6 @@ packages:
     resolution: {integrity: sha512-XPYl/btTcTzW+XF20ITB51L8jPjbS72tSKPcv/CHJgM+3LbBvW8Az/X7RcBTJSXDNOwCY5mGkjA7CXQtuxOKgw==}
     dependencies:
       dayjs: 1.11.10
-    dev: true
-
-  /vitepress-theme-website@1.0.6(typescript@5.4.3):
-    resolution: {integrity: sha512-Nu+oJrI6slYkgIbOuWMlJHORoicuBE2zIQZSY4WQEQ58hSCa/aconEx5N6ei8sW6B1qUDVTyUzySBMYNg/kEJQ==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@waline/client': 2.15.8(typescript@5.4.3)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - typescript
     dev: true
 
   /vitepress@1.0.1(@algolia/client-search@4.22.1)(search-insights@2.13.0)(typescript@5.4.3):

@@ -21,6 +21,8 @@ export default defineConfig({
 
 
   themeConfig: {
+    logo: '/logo.png',
+
     nav: [
       { text: '首页', link: '/' },
 
@@ -55,10 +57,12 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/CikeyQi/Yumi'}
     ],
+
     footer:{
       copyright: 'Copyright © 2024-present CikeyQi. All rights reserved.',
       message: 'Powered by vitepress'
     },
+
     search: {
       provider: "local",
       options: {
