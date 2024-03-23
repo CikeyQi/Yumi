@@ -18,10 +18,17 @@ export default defineConfig({
     ],
   },
 
+  
+  head: [
+    [
+        'link', { rel: 'icon', href: '/asset/image/pink_logo.png' }
+    ]
+  ],
+
 
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: { light: '/asset/image/light_logo.png', dark: '/asset/image/dark_logo.png'},
 
     nav: [
       { text: '首页', link: '/' },
@@ -43,6 +50,14 @@ export default defineConfig({
 
       { text: '关于', link: '/about/about' },
     ],
+
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+          dateStyle: 'short',
+          timeStyle: 'medium'
+      }
+    },
 
     editLink: {
       pattern: 'https://github.com/CikeyQi/Yumi/tree/main/docs/:path',
@@ -82,6 +97,12 @@ export default defineConfig({
         },
       },
     },
-  },
 
+    outline: 'deep',
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '深色模式',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式'
+  },
 });
