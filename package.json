@@ -2,11 +2,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "latest"
+    "vitepress": "latest",
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.3",
+    "vitepress-markdown-timeline": "^1.2.1",
+    "vitepress-theme-website": "^1.0.6"
   }
 }
