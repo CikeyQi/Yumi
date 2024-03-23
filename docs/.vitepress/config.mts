@@ -21,14 +21,14 @@ export default defineConfig({
   
   head: [
     [
-        'link', { rel: 'icon', href: '/asset/image/pink_logo.png' }
+        'link', { rel: 'icon', href: '/img/pink_logo.png' }
     ]
   ],
 
 
 
   themeConfig: {
-    logo: { light: '/asset/image/light_logo.png', dark: '/asset/image/dark_logo.png'},
+    logo: { light: '/img/light_logo.png', dark: '/img/dark_logo.png'},
 
     nav: [
       { text: '首页', link: '/' },
