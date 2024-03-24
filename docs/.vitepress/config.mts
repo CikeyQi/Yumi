@@ -1,24 +1,13 @@
 import { defineConfig } from 'vitepress';
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+import { setSidebar } from './autoSidebar.js';
 
+console.log(setSidebar('docs/plugins/ap-plugin'))
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Yumi',
   description: 'Constructing a Personal Yunzai Plugin Project Documentation Integration Repository.',
 
-  vite: {
-    plugins: [
-      AutoSidebar({
-        ignoreIndexItem: true,
-        deletePrefix: '.',
-        collapsed: true,
-        titleFromFile: true,
-      }),
-    ],
-  },
-
-  
   head: [
     [
         'link', { rel: 'icon', href: '/img/pink_logo.png' }
@@ -36,20 +25,33 @@ export default defineConfig({
       {
         text: '文档',
         items: [
-          { text: 'AP-PLUGIN', link: '/plugins/ap-plugin/about' },
-          { text: 'MJ-PLUGIN', link: '/plugins/mj-plugin/about' },
-          { text: 'NAI-PLUGIN', link: '/plugins/nai-plugin/about' },
-          { text: 'NSFWJS-PLUGIN', link: '/plugins/nsfwjs-plugin/about' },
-          { text: 'MC-PLUGIN', link: '/plugins/mc-plugin/about' },
-          { text: 'MIJIA-PLUGIN', link: '/plugins/mijia-plugin/about' },
-          { text: 'GPTI-PLUGIN', link: '/plugins/gpti-plugin/about' },
-          { text: 'EXLOLI-PLUGIN', link: '/plugins/exloli-plugin/about' },
-          { text: 'NEKO-STATUS-PLUGIN', link: '/plugins/neko-status-plugin/about' },
+          { text: 'AP-PLUGIN', link: '/plugins/ap-plugin/configuration/configuration' },
+          { text: 'MJ-PLUGIN', link: '/plugins/mj-plugin/configuration/configuration' },
+          { text: 'NAI-PLUGIN', link: '/plugins/nai-plugin/configuration/configuration' },
+          { text: 'NSFWJS-PLUGIN', link: '/plugins/nsfwjs-plugin/configuration/configuration' },
+          { text: 'MC-PLUGIN', link: '/plugins/mc-plugin/configuration/configuration' },
+          { text: 'MIJIA-PLUGIN', link: '/plugins/mijia-plugin/configuration/configuration' },
+          { text: 'GPTI-PLUGIN', link: '/plugins/gpti-plugin/configuration/configuration' },
+          { text: 'EXLOLI-PLUGIN', link: '/plugins/exloli-plugin/configuration/configuration' },
+          { text: 'NEKO-STATUS-PLUGIN', link: '/plugins/neko-status-plugin/configuration/configuration' },
         ],
       },
 
       { text: '关于', link: '/about/about' },
     ],
+
+    sidebar: {
+      'about': setSidebar('docs/plugins'),
+      'plugins/ap-plugin': setSidebar('docs/plugins/ap-plugin'),
+      'plugins/mj-plugin': setSidebar('docs/plugins/mj-plugin'),
+      'plugins/nai-plugin': setSidebar('docs/plugins/nai-plugin'),
+      'plugins/nsfwjs-plugin': setSidebar('docs/plugins/nsfwjs-plugin'),
+      'plugins/mc-plugin': setSidebar('docs/plugins/mc-plugin'),
+      'plugins/mijia-plugin': setSidebar('docs/plugins/mijia-plugin'),
+      'plugins/gpti-plugin': setSidebar('docs/plugins/gpti-plugin'),
+      'plugins/exloli-plugin': setSidebar('docs/plugins/exloli-plugin'),
+      'plugins/neko-status-plugin': setSidebar('docs/plugins/neko-status-plugin'),
+    },
 
     lastUpdated: {
       text: '最后更新于',
