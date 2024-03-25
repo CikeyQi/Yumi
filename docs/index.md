@@ -17,46 +17,46 @@ features:
   - icon: 😺
     title: AP-PLUGIN
     details: 基于 Yunzai 的 Stable Diffusion 绘图插件
-    link: '/plugins/ap-plugin/configuration/configuration'
+    link: '/plugins/ap-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😸
     title: MJ-PLUGIN
     details: 基于 Yunzai 的 Midjourney 绘图插件
-    link: '/plugins/mj-plugin/configuration/configuration'
+    link: '/plugins/mj-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😹
     title: NAI-PLUGIN
     details: 基于 Yunzai 的 NoevlAI 绘图插件
-    link: '/plugins/nai-plugin/configuration/configuration'
+    link: '/plugins/nai-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😻
     title: NSFWJS-PLUGIN
     details: 基于 Yunzai 的 NSFWJS 图像识别插件
-    link: '/plugins/nsfwjs-plugin/configuration/configuration'
+    link: '/plugins/nsfwjs-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😼
     title: MC-PLUGIN
     details: 基于 Yunzai 的 Minecraft 服务器互通插件
-    link: '/plugins/mc-plugin/configuration/configuration'
+    link: '/plugins/mc-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😽
     title: MIJIA-PLUGIN
     details: 基于 Yunzai 的米家家具控制插件
-    link: '/plugins/mijia-plugin/configuration/configuration'
+    link: '/plugins/mijia-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 🙀
     title: GPTI-PLUGIN
     details: 基于 Yunzai 的免费文本图像生成插件
-    link: '/plugins/gpti-plugin/configuration/configuration'
+    link: '/plugins/gpti-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😿
     title: EXLOLI-PLUGIN
     details: 基于 Yunzai 的 ExLoli 本子推送插件
-    link: '/plugins/exloli-plugin/configuration/configuration'
+    link: '/plugins/exloli-plugin/getting-started/getting-started'
     linkText: 查看文档
   - icon: 😾
     title: NEKO-STATUS-PLUGIN
     details: 基于 Yunzai 的 Neko 服务器状态监控插件
-    link: '/plugins/neko-status-plugin/configuration/configuration'
+    link: '/plugins/neko-status-plugin/getting-started/getting-started'
     linkText:  查看文档
 ---

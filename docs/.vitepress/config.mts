@@ -6,9 +6,7 @@ export default defineConfig({
   description: 'Constructing a Personal Yunzai Plugin Project Documentation Integration Repository.',
 
   head: [
-    [
-      'link', { rel: 'icon', href: '/img/pink_logo.png' }
-    ]
+    ['link', { rel: 'icon', href: '/img/pink_logo.png' }],
   ],
 
   themeConfig: {
@@ -63,7 +61,11 @@ export default defineConfig({
       },
     },
 
-    outline: 'deep',
+    outline: {
+      level: 'deep',
+      label: '页面导航'
+    },
+
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '菜单',
     darkModeSwitchLabel: '深色模式',
@@ -79,15 +81,15 @@ function nav(): any[] {
     {
       text: '文档',
       items: [
-        { text: 'AP-PLUGIN', link: '/plugins/ap-plugin/configuration/configuration' },
-        { text: 'MJ-PLUGIN', link: '/plugins/mj-plugin/configuration/configuration' },
-        { text: 'NAI-PLUGIN', link: '/plugins/nai-plugin/configuration/configuration' },
-        { text: 'NSFWJS-PLUGIN', link: '/plugins/nsfwjs-plugin/configuration/configuration' },
-        { text: 'MC-PLUGIN', link: '/plugins/mc-plugin/configuration/configuration' },
-        { text: 'MIJIA-PLUGIN', link: '/plugins/mijia-plugin/configuration/configuration' },
-        { text: 'GPTI-PLUGIN', link: '/plugins/gpti-plugin/configuration/configuration' },
-        { text: 'EXLOLI-PLUGIN', link: '/plugins/exloli-plugin/configuration/configuration' },
-        { text: 'NEKO-STATUS-PLUGIN', link: '/plugins/neko-status-plugin/configuration/configuration' },
+        { text: 'AP-PLUGIN', link: '/plugins/ap-plugin/getting-started/getting-started' },
+        { text: 'MJ-PLUGIN', link: '/plugins/mj-plugin/getting-started/getting-started' },
+        { text: 'NAI-PLUGIN', link: '/plugins/nai-plugin/getting-started/getting-started' },
+        { text: 'NSFWJS-PLUGIN', link: '/plugins/nsfwjs-plugin/getting-started/getting-started' },
+        { text: 'MC-PLUGIN', link: '/plugins/mc-plugin/getting-started/getting-started' },
+        { text: 'MIJIA-PLUGIN', link: '/plugins/mijia-plugin/getting-started/getting-started' },
+        { text: 'GPTI-PLUGIN', link: '/plugins/gpti-plugin/getting-started/getting-started' },
+        { text: 'EXLOLI-PLUGIN', link: '/plugins/exloli-plugin/getting-started/getting-started' },
+        { text: 'NEKO-STATUS-PLUGIN', link: '/plugins/neko-status-plugin/getting-started/getting-started' },
       ],
     },
 
