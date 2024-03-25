@@ -1,7 +1,4 @@
 import { defineConfig } from 'vitepress';
-import { setSidebar } from './autoSidebar.js';
-
-console.log(setSidebar('docs/plugins/ap-plugin'))
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'zh-CN',
@@ -10,54 +7,20 @@ export default defineConfig({
 
   head: [
     [
-        'link', { rel: 'icon', href: '/img/pink_logo.png' }
+      'link', { rel: 'icon', href: '/img/pink_logo.png' }
     ]
   ],
-
-
 
   themeConfig: {
     logo: { light: '/img/light_logo.png', dark: '/img/dark_logo.png'},
 
-    nav: [
-      { text: '首页', link: '/' },
+    nav: nav(),
 
-      {
-        text: '文档',
-        items: [
-          { text: 'AP-PLUGIN', link: '/plugins/ap-plugin/configuration/configuration' },
-          { text: 'MJ-PLUGIN', link: '/plugins/mj-plugin/configuration/configuration' },
-          { text: 'NAI-PLUGIN', link: '/plugins/nai-plugin/configuration/configuration' },
-          { text: 'NSFWJS-PLUGIN', link: '/plugins/nsfwjs-plugin/configuration/configuration' },
-          { text: 'MC-PLUGIN', link: '/plugins/mc-plugin/configuration/configuration' },
-          { text: 'MIJIA-PLUGIN', link: '/plugins/mijia-plugin/configuration/configuration' },
-          { text: 'GPTI-PLUGIN', link: '/plugins/gpti-plugin/configuration/configuration' },
-          { text: 'EXLOLI-PLUGIN', link: '/plugins/exloli-plugin/configuration/configuration' },
-          { text: 'NEKO-STATUS-PLUGIN', link: '/plugins/neko-status-plugin/configuration/configuration' },
-        ],
-      },
-
-      { text: '关于', link: '/about/about' },
-    ],
-
-    sidebar: {
-      'about': setSidebar('docs/plugins'),
-      'plugins/ap-plugin': setSidebar('docs/plugins/ap-plugin'),
-      'plugins/mj-plugin': setSidebar('docs/plugins/mj-plugin'),
-      'plugins/nai-plugin': setSidebar('docs/plugins/nai-plugin'),
-      'plugins/nsfwjs-plugin': setSidebar('docs/plugins/nsfwjs-plugin'),
-      'plugins/mc-plugin': setSidebar('docs/plugins/mc-plugin'),
-      'plugins/mijia-plugin': setSidebar('docs/plugins/mijia-plugin'),
-      'plugins/gpti-plugin': setSidebar('docs/plugins/gpti-plugin'),
-      'plugins/exloli-plugin': setSidebar('docs/plugins/exloli-plugin'),
-      'plugins/neko-status-plugin': setSidebar('docs/plugins/neko-status-plugin'),
-    },
+    sidebar: sidebar(),
 
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
-          dateStyle: 'short',
-          timeStyle: 'medium'
       }
     },
 
@@ -108,3 +71,319 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式'
   },
 });
+
+function nav(): any[] {
+  return [
+    { text: '首页', link: '/' },
+
+    {
+      text: '文档',
+      items: [
+        { text: 'AP-PLUGIN', link: '/plugins/ap-plugin/configuration/configuration' },
+        { text: 'MJ-PLUGIN', link: '/plugins/mj-plugin/configuration/configuration' },
+        { text: 'NAI-PLUGIN', link: '/plugins/nai-plugin/configuration/configuration' },
+        { text: 'NSFWJS-PLUGIN', link: '/plugins/nsfwjs-plugin/configuration/configuration' },
+        { text: 'MC-PLUGIN', link: '/plugins/mc-plugin/configuration/configuration' },
+        { text: 'MIJIA-PLUGIN', link: '/plugins/mijia-plugin/configuration/configuration' },
+        { text: 'GPTI-PLUGIN', link: '/plugins/gpti-plugin/configuration/configuration' },
+        { text: 'EXLOLI-PLUGIN', link: '/plugins/exloli-plugin/configuration/configuration' },
+        { text: 'NEKO-STATUS-PLUGIN', link: '/plugins/neko-status-plugin/configuration/configuration' },
+      ],
+    },
+
+    { text: '关于', link: '/about/about' },
+  ]
+}
+
+function sidebar() {
+  return {
+    "/plugins/ap-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/ap-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/ap-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/ap-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/exloli-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/exloli-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/exloli-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/exloli-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/gpti-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/gpti-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/gpti-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/gpti-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/mc-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/mc-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/mc-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/mc-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/mijia-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/mijia-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/mijia-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/mijia-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/mj-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/mj-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/mj-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/mj-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/nai-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/nai-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/nai-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/nai-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/neko-status-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/neko-status-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/neko-status-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/neko-status-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ],
+    "/plugins/nsfwjs-plugin/": [
+      {
+        text: "快速开始",
+        collapsed: false,
+        items: [
+          {
+            text: "安装",
+            link: "/plugins/nsfwjs-plugin/getting-started/getting-started.md"
+          }
+        ]
+      },
+      {
+        text: "基础配置",
+        collapsed: false,
+        items: [
+          {
+            text: "配置",
+            link: "/plugins/nsfwjs-plugin/configuration/configuration.md"
+          }
+        ]
+      },
+      {
+        text: "常见问题",
+        collapsed: false,
+        items: [
+          {
+            text: "问题",
+            link: "/plugins/nsfwjs-plugin/faq/faq.md"
+          }
+        ]
+      }
+    ]
+  }
+}

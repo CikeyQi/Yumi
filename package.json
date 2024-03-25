@@ -7,8 +7,6 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "latest",
-    "vite-plugin-vitepress-auto-sidebar": "^1.6.3",
-    "vitepress-markdown-timeline": "^1.2.1"
+    "vitepress": "latest"
   }
 }
