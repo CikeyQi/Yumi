@@ -309,6 +309,10 @@ function sidebar() {
           {
             text: "配置",
             link: "/plugins/nai-plugin/configuration/configuration.md"
+          },
+          {
+            text: "腾讯云审核配置",
+            link: "/plugins/nai-plugin/configuration/configuration2.md"
           }
         ]
       },
