@@ -73,7 +73,7 @@
 **BizType 的值为审核策略的名称，例如 `912f9a305ae1101b9f7430435ec51f66`**
 :::
 
-### 获取 SecretId 和 SecretKey
+### 获取 SecretId
 
 1. 登录 [访问管理控制台](https://console.cloud.tencent.com/ci/secret) ，点击 **云 API 密钥**
 
@@ -92,5 +92,13 @@
 :::
 
 ::: tip
-**SecretId 和 SecretKey 的值请自行参考上述步骤获取**
+**SecretId 的值请自行参考上述步骤获取**
+:::
+
+### 获取 SecretKey
+
+1. 参考 [获取 SecretId](#获取-secretid) 步骤获取 SecretKey
+
+::: tip
+**SecretKey 的值请自行参考上述步骤获取**
 :::
