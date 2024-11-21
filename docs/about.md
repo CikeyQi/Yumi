@@ -4,4 +4,4 @@
 
 *Yumi 明明是猫 但是怕高👇*
 
-![Yumi 图片](./img/yumi.png)
+![Yumi 图片](/img/yumi.png)
